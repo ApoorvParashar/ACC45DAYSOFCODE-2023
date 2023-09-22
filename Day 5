@@ -1,0 +1,7 @@
+test=int(input())
+for i in range(test);
+num=int(input())
+if num<=15;
+print("yes")
+else;
+print("no")
