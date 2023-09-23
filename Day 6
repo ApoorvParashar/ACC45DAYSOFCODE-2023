@@ -1,0 +1,9 @@
+# cook your dish here
+n=int(input())
+for i in range(0,n):
+    e=int(input())
+    d=e%4
+    if(d<4 and d!=0):
+        print((e/4)+1)
+    elif(d=0):
+        print(e/4)
