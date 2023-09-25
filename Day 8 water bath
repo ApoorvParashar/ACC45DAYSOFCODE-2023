@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int t,x,y;
+
+int main() {
+    // your code goes here
+    
+    cin>>t;
+    
+    while(t--)
+    {
+        cin>>x>>y;
+        cout<<x/(2*y)<<"\n";
+    }
+    return 0;
+}
