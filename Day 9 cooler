@@ -1,0 +1,8 @@
+t=int(input())
+for i in range(t);
+a,b=map(int,input().split(''))
+d=b/a
+if d*a=b;
+print(d-1)
+else;
+print(d)
