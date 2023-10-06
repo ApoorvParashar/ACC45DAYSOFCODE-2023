@@ -1,0 +1,51 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+// Function to determine the better rank or tie
+vector<string> determineRank(int t, vector<vector<int>>& testCases) {
+    vector<string> results;
+
+    for (int i = 0; i < t; i++) {
+        int a = testCases[i][0];
+        int b = testCases[i][1];
+        int c = testCases[i][2];
+        int pa = testCases[i][3];
+        int pb = testCases[i][4];
+        int qa = testCases[i][5];
+        int qb = testCases[i][6];
+
+        int time_penalty_p = max(pa, pb);
+        int time_penalty_q = max(qa, qb);
+
+        if (time_penalty_p < time_penalty_q) {
+            results.push_back("P");
+        } else if (time_penalty_q < time_penalty_p) {
+            results.push_back("Q");
+        } else {
+            results.push_back("TIE");
+        }
+    }
+
+    return results;
+}
+
+int main() {
+    int t;
+    cin >> t;
+
+    vector<vector<int>> testCases(t, vector<int>(7));
+
+    for (int i = 0; i < t; i++) {
+        cin >> testCases[i][0] >> testCases[i][1] >> testCases[i][2] >> testCases[i][3] >> testCases[i][4] >> testCases[i][5] >> testCases[i][6];
+    }
+
+    vector<string> results = determineRank(t, testCases);
+
+    for (string result : results) {
+        cout << result << endl;
+    }
+
+    return 0;
+}
