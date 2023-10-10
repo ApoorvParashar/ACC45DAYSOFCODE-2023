@@ -1,0 +1,39 @@
+#include<stdio.h>
+
+
+int main(){
+    
+int a=30;
+int b=20;
+int result;
+char op;
+
+printf("Enter the operation");
+scanf("%c",&op);
+
+switch(op){
+                   
+case '+':
+     result=a+b;
+     printf("%d",result);
+     break;
+case '-':
+     result=a-b;
+     printf("%d",result);
+     break;
+case '*':
+     result=a*b;
+     printf("%d",result);
+     break;
+case '/':
+     result=a/b;
+     printf("%d",result); 
+     break;  
+default:
+     printf("Invalid operation");   
+}
+   
+
+return 0;
+    
+    }
