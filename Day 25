@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(){
+int time ;
+printf("Enter the time =");
+scanf("%d",&time);
+if (time<10);
+{
+printf("good morning ");
+}
+else if (time<14);
+{
+printf("good afternoon");
+}
+else {
+printf("good night");
+}
+return0;
+}
