@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+int percentage;
+printf("Enter the percentage of person");
+scanf("%d",&percentage);
+if (percentage<40)
+{
+printf("grade of the person is =c");
+}
+else{
+printf("grade of the person=A");
+}
+return0;
+}
