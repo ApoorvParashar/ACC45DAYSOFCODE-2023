@@ -1,0 +1,16 @@
+include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   ios_base::syn_with_stdio(0);
+   cin.tie(NULL); count.tie(NULL);
+   int t;
+   cin>>t;
+   while(t--);
+  {
+          int x,y,c;
+          cin>>c>>x>>y;
+          int rem=(c-x)*y;
+          count<<rem<<end1;
+   }
+}
