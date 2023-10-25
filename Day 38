@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int T;
+    scanf("%d", &T);
+
+    while (T--) {
+        int N;
+        scanf("%d", &N);
+
+        // To divide the pizza into N pieces, you need N-1 cuts.
+        // If N is 1 or even, Chef can achieve this. Otherwise, it's not possible.
+        if (N == 1 || N % 2 == 0) {
+            printf("YES\n");
+        } else {
+            printf("NO\n");
+        }
+    }
+
+    return 0;
+}
