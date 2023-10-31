@@ -1,0 +1,20 @@
+#include <stdlib.h>
+
+int main()
+{
+    int arr[6]={5,10,15,20,25,30};
+    int i,oddSum=0,evenSum=0;
+
+    for(i=0; i<6; i++){
+        if(arr[i]%2==0){
+        evenSum=evenSum+arr[i];
+        }
+    else{
+             oddSum=oddSum+arr[i];
+        }
+    }
+    printf("The sum of odd numbers are: %d",oddSum);
+    printf("\nThe sum of even numbers are: %d",evenSum);
+    getch();
+    return 0;
+}
